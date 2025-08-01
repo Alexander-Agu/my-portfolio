@@ -1,0 +1,111 @@
+
+        .navbar {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            transition: all 0.3s ease;
+            padding: 0 1rem;
+        }
+
+        .navbar.scrolled {
+            background-color: hsla(10, 10%, 4%, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid hsl(10, 10%, 12%);
+        }
+
+        .navbar-container {
+            max-width: 80rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.25rem;
+            background: linear-gradient(to right, hsl(142, 71%, 45%), hsl(142, 71%, 55%));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: hsl(0, 0%, 63%);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: hsl(142, 71%, 45%);
+        }
+
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: hsl(0, 0%, 98%);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            background-color: hsl(10, 10%, 6%);
+            border: 1px solid hsl(10, 10%, 12%);
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            padding: 1rem;
+        }
+
+        .mobile-menu.open {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            width: 100%;
+            padding: 0.5rem 0;
+            color: hsl(0, 0%, 63%);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .mobile-menu a:hover {
+            color: hsl(142, 71%, 45%);
+        }
+
+        @media (min-width: 768px) {
+            .navbar {
+                padding: 0 2rem;
+            }
+
+            .nav-links {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .navbar {
+                padding: 0 4rem;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .navbar {
+                padding: 0 6rem;
+            }
+        }
