@@ -1,0 +1,266 @@
+
+
+
+
+
+/* BACKGROUND ANIMATION */
+.hero-background {
+    position: relative;
+    min-height: 100vh;
+    background: hsl(10, 10%, 4%);
+    /* --background */
+    overflow: hidden;
+}
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.orb-1 {
+    top: 25%;
+    left: 25%;
+    width: 128px;
+    height: 128px;
+    background: hsla(142, 71%, 45%, 0.1);
+    /* primary with 10% opacity */
+}
+
+.orb-2 {
+    bottom: 25%;
+    right: 25%;
+    width: 96px;
+    height: 96px;
+    background: hsla(158, 64%, 52%, 0.1);
+    /* emerald-400 with 10% opacity */
+    animation-delay: 1000ms;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+
+/* CSS TOOLS */
+.gradient-text {
+    background: linear-gradient(to right, hsl(142, 71%, 45%), hsl(142, 71%, 55%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.green-text {
+    color: hsl(142, 71%, 45%);
+}
+
+
+
+/* Hero Container */
+.hero-container{
+    width: 100%;
+    min-height: 100dvh;
+}
+
+
+/* Hero Section ( contains the hero content ) */
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    position: relative;
+    z-index: 2;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+/* Responsive */
+@media screen and (max-width: 450px) {
+    .hero-section{
+        gap: 1rem;
+    }
+}
+
+
+/* Hero Title */
+.hero-title{
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.hero-title span{
+    background: linear-gradient(to right, hsl(142, 71%, 45%), hsl(142, 71%, 55%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+/* Responsive */
+@media screen and (max-width: 980px) {
+    .hero-title{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .hero-title{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .hero-title{
+        font-size: 2rem;
+    }
+}
+
+
+/* Hero Intro */
+.hero-intro{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 63%);
+
+    width: 60%;
+}
+/* Responsive */
+@media screen and (max-width: 980px) {
+    .hero-intro{
+        width: 80%;
+        font-size: 1.2rem
+    }
+}
+@media screen and (max-width: 550px) {
+    .hero-intro{
+        width: 100%;
+        font-size: 1rem
+    }
+}
+@media screen and (max-width: 450px) {
+    .hero-intro{
+        width: 100%;
+        font-size: 0.9rem
+    }
+}
+
+
+/* Hero Location */
+.hero-location{
+    font-size: 1rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 63%);
+    text-align: center;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+/* Responsive */
+@media screen and (max-width: 450px) {
+    .hero-location{
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Hero Navigation */
+.hero-navbar{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-navbar a{
+    width: 180px;
+    height: 40px;
+    padding: 0.5rem;
+
+    border-radius: 5px;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-direct{
+    background: linear-gradient(to right, hsl(142, 71%, 45%), hsl(142, 71%, 55%));
+    box-shadow: 1px 1px 20px hsl(142, 71%, 45%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-download{
+    background-color: transparent;
+    text-decoration: none;
+    color: hsl(142, 71%, 45%);
+
+    border: 1px solid hsl(142, 71%, 45%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Responsive */
+@media screen and (max-width: 450px) {
+    .hero-navbar a{
+        width: 130px;
+        padding: 0.5rem;
+
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+/* Hero Socials */
+.hero-socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-socials a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.hero-socials a:hover{
+    color: hsl(142, 71%, 45%);
+    background: transparent;
+    /* box-shadow: 1px 1px 20px hsl(142, 71%, 45%); */
+}
