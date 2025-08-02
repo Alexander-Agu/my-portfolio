@@ -1,12 +1,24 @@
-# React + Vite
+# 💼 Alexander Agu's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio repository! This is a showcase of my work as a passionate full-stack developer and tech mentor, dedicated to building impactful digital solutions.
 
-Currently, two official plugins are available:
+## 🔍 About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I'm Alexander Agu, a developer based in South Africa with experience in building full-stack applications, and interactive 3D games. I specialize in technologies like:
 
-## Expanding the ESLint configuration
+- 🌐 **Frontend:** React, Tailwind CSS, HTML, CSS
+- 🖥️ **Backend:** ASP.NET, Java Spring Boot, Node.js
+- 🗃️ **Databases:** SQL Server, MySQL, Firebase
+- ☁️ **Cloud:** AWS, Firebase
+- 🎮 **Game Dev:** Unity (C#), Godot Engine, Blender (3D assets/animation)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📫 Get in Touch
+
+- 📍 Based in Gauteng, South Africa  
+- 📧 [Your email here]  
+- 🌐 [Your portfolio site link here if you have one]
+
+---
+
+Thanks for checking out my portfolio! Feel free to clone, fork, or reach out if you'd like to collaborate or learn more.
