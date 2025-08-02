@@ -1,0 +1,145 @@
+
+
+/* Experience Card */
+.exp-card{
+    padding: 1.3rem;
+    width: 50%;
+    min-height: 15rem;
+
+    background-color: hsl(10, 10%, 6%);
+    border: 2px solid hsl(10, 10%, 12%);
+    border-radius: 10px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    transition: ease-in-out 300ms;
+}
+
+.exp-card:hover{
+    border-color: hsl(142, 71%, 45%, 0.5);
+    scale: 1.03;
+    transition: ease-in-out 300ms;
+}
+/* Respoonsive */
+@media screen and (max-width: 1500px) { 
+    .exp-card{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1150px) { 
+    .exp-card{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 900px) { 
+    .exp-card{
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+/* Experience icon */
+.exp-icon{
+    min-width: 60px;
+    height: 60px;
+
+    border: 1px solid ;
+    border-radius: 10px;
+
+    background-color: hsl(142, 71%, 45%, 0.1);
+    color: hsl(142, 71%, 45%);
+
+    font-size: 2rem;
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .exp-icon{
+        width: 60px;
+    }
+}
+
+
+/* Experience info */
+.exp-info{
+    min-height: 100%;
+    width: 100%;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.exp-info-title{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.exp-info-intro{
+    font-size: 1.3rem;
+    color: hsl(142, 71%, 45%);
+    font-weight: bold;
+}
+
+.exp-info-content{
+    color: hsl(0, 0%, 63%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .exp-info{
+        gap: 1rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .exp-info-content, .exp-info-benefits p{
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+/* Experience Benefits */
+.exp-info-benefits{
+    width: 100%;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.exp-info-lesson{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.exp-info-icon{
+    color: hsl(142, 71%, 45%);
+}
+
+.exp-info-benefits p{
+    color: hsl(0, 0%, 63%);
+    font-weight: 500;
+}
