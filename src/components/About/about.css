@@ -17,9 +17,6 @@
 }
 /* Responisve */
 @media screen and (max-width: 1350px) {
-    .about-container{
-
-    }
 }
 
 
@@ -130,5 +127,6 @@
 
     .stack-container{
         grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 1.5rem;
     }
 }
