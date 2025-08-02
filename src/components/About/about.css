@@ -1,0 +1,134 @@
+
+
+
+/* About Container */
+.about-container{
+    width: 100%;
+    min-height: 100dvh;
+    padding: 2rem;
+
+    background: hsl(10 10% 8% / 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+/* Responisve */
+@media screen and (max-width: 1350px) {
+    .about-container{
+
+    }
+}
+
+
+/* About Me */
+.about-me{
+    width: 50%;
+    min-height: 150px;
+    padding: 2rem;
+
+    background-color: hsl(10, 10%, 8%);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    border: 2px solid hsl(10, 10%, 12%);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.about-me h2{
+    width: 100%;
+    margin-bottom: 30px;
+
+    color: hsl(142, 71%, 45%);
+    font-size: 2rem;
+
+    display: grid;
+    place-content: center;
+}
+
+.about-me p{
+    text-align: center;
+    color: hsl(0, 0%, 63%);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+/* Responsive */
+@media screen and (max-width: 1350px) {
+    .about-me{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-me{
+        width: 100%;
+    }
+
+    .about-me p{
+        font-size: 1rem;
+    }
+}
+
+
+/* Techstack showxase */
+.tech-stack{
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.tech-title{
+    width: 100%;
+    margin-bottom: 20px;
+
+    background: linear-gradient(to right, hsl(142, 71%, 45%), hsl(142, 71%, 55%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-size: 3rem;
+
+    display: grid;
+    place-content: center;
+}
+
+.tech-intro{
+    text-align: center;
+    color: hsl(0, 0%, 63%);
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    /* width: 60%; */
+    margin-bottom: 30px;
+}
+
+.stack-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    place-content: center;
+    place-items: center;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .tech-intro{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .tech-title{
+        font-size: 2rem;
+    }
+
+    .stack-container{
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+}

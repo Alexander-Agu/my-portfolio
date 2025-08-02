@@ -6,7 +6,7 @@
 /* BACKGROUND ANIMATION */
 .hero-background {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     background: hsl(10, 10%, 4%);
     /* --background */
     overflow: hidden;
@@ -91,9 +91,6 @@
     padding: 2rem;
 
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-
-    position: relative;
-    z-index: 2;
     
     display: flex;
     flex-direction: column;

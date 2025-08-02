@@ -37,7 +37,7 @@ export default function Header() {
   };
 
   return (
-    <header>
+    // <header className='header'>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
         <div className="navbar-container">
           <div className="logo">Alexander Agu</div>
@@ -63,6 +63,5 @@ export default function Header() {
           <a onClick={() => scrollToSection('#contact')}>Contact</a>
         </div>
       </nav>
-    </header>
   );
 }
