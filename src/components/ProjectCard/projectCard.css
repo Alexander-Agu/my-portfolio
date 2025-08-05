@@ -1,0 +1,258 @@
+
+
+
+/* Project Card Container */
+.project-card-container{
+    width: 28rem;
+    min-height: 30%;
+    padding: 1rem;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    background-color: hsl(10, 10%, 6%);
+    border: 1px solid hsl(10, 10%, 12%);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+
+    transition: ease-in-out 300ms;
+}
+
+.project-card-container:hover{
+    scale: 1.05;
+    border-color: hsl(142, 71%, 45%);
+    transition: ease-in-out 300ms;
+}
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .project-card-container{
+        width: 23rem;
+    }
+}
+@media screen and (max-width: 410px) {
+    .project-card-container{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    .project-card-container{
+        width: 18rem;
+    }
+}
+
+
+/* Project Card Header */
+.project-card-header{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.7rem;
+}
+
+.project-card-header div{
+    width: 60px;
+    height: 60px;
+
+    color: hsl(142, 71%, 45%);
+    font-size: 2rem;
+    background-color: hsl(142, 71%, 45%, 0.1);
+    border-radius: 6px;
+
+    display: grid;
+    place-content: center;
+}
+
+.project-card-header h2{
+    color: white;
+    /* font-family: 'Inter', system-ui, -apple-system, sans-serif; */
+}
+/* Responsive */
+@media screen and (max-width: 410px) {
+    .project-card-header div{
+        width: 50px;
+        height: 50px;
+
+        font-size: 1rem;
+    }
+
+    .project-card-header h2{
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Project Card Description */
+.project-card-des{
+    color: hsl(0, 0%, 63%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* Responsive */
+@media screen and (max-width: 410px) {
+    .project-card-des{
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Project Card Features Container */
+.project-card-features-container{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.project-card-features-container h3{
+    color: hsl(142, 71%, 45%);
+    font-weight: 5s00;
+    font-size: 1.1rem;
+}
+
+.project-card-features{
+    padding-left: 1.5rem;
+
+    color: hsl(0, 0%, 63%);
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+li::marker{
+    color: hsl(142, 71%, 45%);
+}
+/* Responsive */
+@media screen and (max-width: 410px) {
+    .project-card-features-container h3{
+        font-size: 1rem
+    }
+
+    .project-card-features-container li{
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Project Card Stack Container */
+.project-card-stack-container{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+
+.project-card-stack{
+    min-width: 50px;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    color: hsl(142, 71%, 45%);
+    font-size: 1rem;
+    background-color: hsl(142, 71%, 45%, 0.1);
+    border-radius: 16px;
+    border: 1px solid hsl(142, 71%, 45%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Responsive */
+@media screen and (max-width: 410px) {
+    .project-card-stack{
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Project Card Navigation */
+.project-card-navbar{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.project-card-navbar a{
+    width: 35%;
+    padding: 0.6rem;
+
+    /* background-color: aliceblue; */
+
+    font-weight: 600;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.project-card-demo{
+    color: hsl(142, 71%, 45%);
+
+    border: 1px solid hsl(142, 71%, 45%);
+
+    transition: ease-in 200ms;
+} .project-card-demo:hover{
+    background-color: hsl(142, 71%, 45%);
+    color: hsl(0, 0%, 98%);
+
+    transition: ease-in 200ms;
+}
+
+.project-card-github{
+    color: hsl(0, 0%, 63%);
+    border: 1px solid hsl(0, 0%, 63%);
+
+    transition: ease-in 200ms;
+} .project-card-github:hover{
+    background-color: hsl(0, 0%, 63%);
+    color: black;
+
+    transition: ease-in 200ms;
+}
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .project-card-navbar{
+        gap: 1rem;
+    }
+    .project-card-navbar a{
+        font-size: 0.9rem;
+
+        width: 150px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .project-card-navbar{
+        gap: 0.5rem;
+    }
+    .project-card-navbar a{
+        font-size: 0.9rem;
+
+        width: 120px;
+
+        font-size: 0.8rem;
+    }
+}
