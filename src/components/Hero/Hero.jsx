@@ -4,7 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { socialLinks } from './HeroTools';
 import { motion } from 'motion/react';
-
+import Alexander_Agu_Resume from "../../assets/Alexander_Agu_Resume.pdf"
 
 export default function Hero() {
   let time1 = 0.6;
@@ -53,7 +53,7 @@ export default function Hero() {
 
             <nav className="hero-navbar">
                 <a href="#" className="hero-direct">View my work</a>
-                <a href="#" download className="hero-download">
+                <a href={Alexander_Agu_Resume} download className="hero-download">
                 <MdOutlineFileDownload />
                 <p>Download Resume</p>
                 </a>
