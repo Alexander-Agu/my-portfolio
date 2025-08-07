@@ -2,11 +2,18 @@ import React from 'react'
 import "./expCard.css"
 import { RiGroupLine } from "react-icons/ri";
 import { LuCodeXml } from "react-icons/lu";
+import { motion } from 'motion/react';
+
 
 
 export default function ExpCard() {
   return (
-    <div className="exp-card">
+    <motion.div className="exp-card"
+        initial={{opacity: 0, y: 80}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.6, ease: "easeIn", delay: 0.6}}
+        viewport={{once: true, amount: 0.3}}
+    >
         <div className="exp-icon">
             <RiGroupLine />
         </div>
@@ -29,6 +36,6 @@ export default function ExpCard() {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }

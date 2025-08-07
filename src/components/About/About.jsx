@@ -43,7 +43,7 @@ export default function About() {
                 <motion.p className='tech-intro'
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.3}}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.1}}
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     I leverage modern technologies to build scalable, efficient, and user-friendly applications that solve real-world problems.
