@@ -1,14 +1,30 @@
 import React from 'react'
 import "./projects.css"
 import ProjectCard from '../ProjectCard/ProjectCard'
+import { motion } from 'motion/react'
+
 
 export default function Projects() {
   return (
-    <section className='projects-container' id='projects'>
-        <h2 className='projects-title'>Featured Projects</h2>
-        <p className='projects-intro'>
+    <section className='projects-container' id='projects' style={{overflow: "hidden"}}>
+        <motion.h2 className='projects-title'
+          initial={{opacity: 0, x: -80}}
+          whileInView={{opacity: 1, x: 0}}
+          transition={{duration: 0.8, ease: "easeInOut"}}
+          viewport={{once: true, amount: 0.3}}
+        >
+          Featured Projects
+        </motion.h2>
+
+
+        <motion.p className='projects-intro'
+          initial={{opacity: 0, x: 80}}
+          whileInView={{opacity: 1, x: 0}}
+          transition={{duration: 0.8, ease: "easeInOut"}}
+          viewport={{once: true, amount: 0.3}}
+        >
             A showcase of my recent work, demonstrating expertise in full-stack development and cloud integration.
-        </p>
+        </motion.p>
 
         <div className="projects">
             <ProjectCard />

@@ -3,10 +3,17 @@ import "./projectCard.css"
 import { FaBox } from "react-icons/fa6";
 import { GrShare } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
+import { motion } from 'motion/react';
+
 
 export default function ProjectCard() {
   return (
-    <div className="project-card-container">
+    <motion.div className="project-card-container"
+      initial={{opacity: 0, y: 80}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{duration: 0.8, ease: "easeInOut"}}
+      viewport={{once: true, amount: 0.3}}    
+    >
         <div className="project-card-header">
           <div>
             <FaBox className='project-card-icon' />
@@ -48,6 +55,6 @@ export default function ProjectCard() {
             <p>Source Code</p>
           </a>
         </div>
-    </div>
+    </motion.div>
   )
 }
