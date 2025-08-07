@@ -40,7 +40,7 @@ export default function Hero() {
                 <span className="green-text"> tech mentor</span>, focused on building impactful web applications and cloud-integrated systems.
             </motion.p>
 
-            <div className="hero-location">
+            <motion.div variants={itemVariants(1.0)} className="hero-location">
                 <IoLocationOutline
                 style={{
                     color: "hsl(142, 71%, 45%)",
@@ -49,23 +49,23 @@ export default function Hero() {
                 }}
                 />
                 <p>Based in South Africa, Gauteng, Rosebank</p>
-            </div>
+            </motion.div>
 
-            <nav className="hero-navbar">
-                <a href="#" className="hero-direct">View my work</a>
+            <motion.nav variants={itemVariants(1.2)} className="hero-navbar">
+                <a href="#projects" className="hero-direct">View my work</a>
                 <a href={Alexander_Agu_Resume} download className="hero-download">
                 <MdOutlineFileDownload />
                 <p>Download Resume</p>
                 </a>
-            </nav>
+            </motion.nav>
 
-            <div className="hero-socials">
+            <motion.div variants={itemVariants(1.4)} className="hero-socials">
                 {socialLinks.map(({ icon, link }, index) => (
                 <a href={link} key={index}>
                     {icon}
                 </a>
                 ))}
-            </div>
+            </motion.div>
 
     </motion.div>
   
