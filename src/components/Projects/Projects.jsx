@@ -2,6 +2,7 @@ import React from 'react'
 import "./projects.css"
 import ProjectCard from '../ProjectCard/ProjectCard'
 import { motion } from 'motion/react'
+import { projectCards } from './ProjectTools'
 
 
 export default function Projects() {
@@ -27,7 +28,11 @@ export default function Projects() {
         </motion.p>
 
         <div className="projects">
-            <ProjectCard />
+            {
+              projectCards.map( x => {
+                return <ProjectCard cardData={x} />
+              })
+            }
         </div>
     </section>
   )
