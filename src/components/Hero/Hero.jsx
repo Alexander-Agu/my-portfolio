@@ -70,9 +70,9 @@ export default function Hero() {
     </motion.div>
   
 
-        <section class="animated-background">
-            <div class="floating-orb orb-1"></div>
-            <div class="floating-orb orb-2"></div>
+        <section className="animated-background">
+            <div className="floating-orb orb-1"></div>
+            <div className="floating-orb orb-2"></div>
         </section>
 
 

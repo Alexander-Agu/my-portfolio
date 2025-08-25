@@ -110,11 +110,18 @@
 .stack-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
     gap: 1rem;
+    align-items: center;
     place-content: center;
     place-items: center;
 }
 /* Responsive */
+@media screen and (max-width: 600px) {
+    .tech-intro{
+        font-size: 1rem;
+    }
+}
 @media screen and (max-width: 600px) {
     .tech-intro{
         font-size: 1rem;
@@ -125,8 +132,8 @@
         font-size: 2rem;
     }
 
-    .stack-container{
+    /* .stack-container{
         grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
         gap: 1.5rem;
-    }
+    } */
 }

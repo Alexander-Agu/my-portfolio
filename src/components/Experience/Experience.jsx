@@ -2,6 +2,7 @@ import React from 'react'
 import "./experience.css"
 import ExpCard from '../ExpCard/ExpCard'
 import { motion } from 'motion/react'
+import { experiences } from './ExperienceTools'
 
 
 export default function Experience() {
@@ -25,7 +26,7 @@ export default function Experience() {
         </motion.p>
 
         <div className="experiences">
-            <ExpCard />
+            <ExpCard body={experiences} />
         </div>
     </section>
   )

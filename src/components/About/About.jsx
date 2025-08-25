@@ -31,6 +31,10 @@ export default function About() {
                 </p>
             </motion.div>
 
+            <motion.div className='education-container'>
+                <h2>My Education</h2>
+            </motion.div>
+
             <motion.div className="tech-stack">
                 <motion.h2 className='tech-title'        
                     initial={{ opacity: 0, y: 50 }}

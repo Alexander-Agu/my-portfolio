@@ -32,3 +32,12 @@ export const stack = [
         icon : <FaGithubSquare />
     },
 ]
+
+
+export const education = [{
+    icon: false,
+    title: "WeThinkCode",
+    type: "Software Engineering NQF 6",
+    content: "We focused on learning basics of software engineering and brownfields development and I selected Mobile Dev as my elective",
+    takeAways: ["placeholder", "placeholder2"]
+}]

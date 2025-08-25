@@ -34,7 +34,7 @@ export default function ProjectCard({cardData}) {
           <ul className="project-card-features">
             {
               features.map(x => {
-                return <li>{x}</li>
+                return <li key={x}>{x}</li>
               })
             }
           </ul>
@@ -43,7 +43,7 @@ export default function ProjectCard({cardData}) {
         <div className="project-card-stack-container">
           {
             stack.map(x => {
-              return <div className="project-card-stack">{x}</div>
+              return <div key={x} className="project-card-stack">{x}</div>
             })
           }
         </div>

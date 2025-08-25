@@ -30,7 +30,7 @@ export default function Projects() {
         <div className="projects">
             {
               projectCards.map( x => {
-                return <ProjectCard cardData={x} />
+                return <ProjectCard cardData={x} key={x.name} />
               })
             }
         </div>

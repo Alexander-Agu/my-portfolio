@@ -175,8 +175,13 @@ li::marker{
 }
 /* Responsive */
 @media screen and (max-width: 410px) {
+    .project-card-stack-container{
+        gap: 0.3rem;
+    }
     .project-card-stack{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 }
 
